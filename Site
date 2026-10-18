@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+  <meta name="description" content="GULL ROYAL — premium men's streetwear. Own Your Style." />
+  <title>GULL ROYAL — Own Your Style</title>
+  <style>
+    :root{--ink:#111;--paper:#f5f3ee;--charcoal:#353535;--olive:#74745b;--muted:#77766f;--line:#dedbd3;--white:#fff;--danger:#a83232;--shadow:0 18px 50px rgba(0,0,0,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif}button,input,select,textarea{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit;text-decoration:none}button{cursor:pointer}img{display:block;max-width:100%}.announcement{background:var(--ink);color:white;text-align:center;padding:9px 12px;font-size:11px;letter-spacing:.13em;text-transform:uppercase}
+    header{position:sticky;top:0;z-index:20;background:rgba(245,243,238,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}.nav{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:17px 24px}.logo{font-size:24px;font-weight:900;letter-spacing:.12em;white-space:nowrap}.logo span{font-weight:400}.navlinks{display:flex;gap:26px;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.09em}.navlinks a:hover,.footer a:hover{text-decoration:underline;text-underline-offset:4px}.navactions{display:flex;align-items:center;gap:12px}.iconbtn{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:50%;width:40px;height:40px;display:grid;place-items:center;font-size:16px;position:relative}.count{position:absolute;top:-5px;right:-4px;background:var(--ink);color:white;font-size:10px;min-width:17px;height:17px;border-radius:20px;display:grid;place-items:center;padding:0 4px}.menu-toggle{display:none}
+    .hero{min-height:590px;display:grid;grid-template-columns:1.02fr .98fr;background:#d8d4ca}.hero-copy{padding:clamp(35px,7vw,100px);display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.2em;font-weight:700;color:var(--olive)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(46px,6.7vw,88px);line-height:.94;letter-spacing:-.065em;margin:20px 0}.hero-copy p{font-size:15px;line-height:1.8;max-width:390px;color:#4e4b45}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;background:var(--ink);color:white;border:1px solid var(--ink);font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;transition:.2s}.btn:hover{background:var(--olive);border-color:var(--olive)}.btn.secondary{background:transparent;color:var(--ink)}.btn.secondary:hover{background:var(--ink);color:white}.hero-art{min-height:440px;position:relative;overflow:hidden;background:#bcb8ad}.hero-art img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}.hero-tag{position:absolute;bottom:22px;left:22px;background:var(--paper);padding:12px 16px;font-size:10px;letter-spacing:.14em;text-transform:uppercase}
+    .trustbar{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:1px solid var(--line);border-top:1px solid var(--line)}.trustbar div{text-align:center;padding:17px 10px;font-size:10px;letter-spacing:.12em;text-transform:uppercase;border-right:1px solid var(--line)}.trustbar div:last-child{border:0}
+    section{scroll-margin-top:90px}.section{max-width:1240px;margin:auto;padding:76px 24px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}.section-head h2{font-size:clamp(30px,4vw,46px);letter-spacing:-.05em;margin:8px 0 0}.section-head p{color:var(--muted);font-size:13px;margin:0}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}.filter{border:1px solid var(--line);background:transparent;padding:10px 14px;font-size:10px;text-transform:uppercase;letter-spacing:.1em}.filter.active,.filter:hover{background:var(--ink);color:white;border-color:var(--ink)}.product-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}.product-card{min-width:0;display:flex;flex-direction:column}.product-info{display:flex;flex-direction:column;flex:1}.product-info .add-btn{margin-top:auto}.product-image{aspect-ratio:3/4;background:#e6e2d9;position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:cover;transition:transform .4s}.product-card:hover .product-image img{transform:scale(1.04)}.product-badge{position:absolute;top:12px;left:12px;background:var(--paper);padding:7px 9px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.wish{position:absolute;right:10px;top:10px;width:34px;height:34px;border:0;border-radius:50%;background:rgba(245,243,238,.92);font-size:18px}.product-info{padding:14px 1px}.product-top{display:flex;justify-content:space-between;gap:8px}.product-info h3{font-size:13px;margin:0 0 8px;font-weight:700}.price{font-size:13px;font-weight:700;white-space:nowrap}.product-info p{color:var(--muted);font-size:11px;margin:0 0 12px}.add-btn{display:block;width:100%;min-height:44px;border:1px solid var(--ink);background:var(--ink);color:#fff;padding:12px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.12em;opacity:1;visibility:visible;position:relative;z-index:2;transition:background .2s,color .2s}.add-btn:hover,.add-btn:focus-visible{background:var(--olive);border-color:var(--olive);color:#fff;outline:2px solid transparent;outline-offset:2px}.add-btn:focus-visible{box-shadow:0 0 0 3px rgba(116,116,91,.25)}
+    .feature{background:var(--ink);color:white;display:grid;grid-template-columns:1fr 1fr;min-height:360px}.feature-art{min-height:340px;background:#5d5b51}.feature-art img{width:100%;height:100%;object-fit:cover}.feature-copy{padding:clamp(30px,6vw,76px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.feature-copy .eyebrow{color:#b9b89c}.feature-copy h2{font-size:clamp(32px,4.4vw,56px);line-height:1;letter-spacing:-.05em;margin:15px 0}.feature-copy p{font-size:13px;line-height:1.8;color:#c9c7c0;max-width:390px}.feature-copy .btn{background:var(--paper);border-color:var(--paper);color:var(--ink)}.feature-copy .btn:hover{background:#d7d3c9}
+    .newsletter{background:#e8e5dd;text-align:center;padding:65px 24px}.newsletter h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.05em;margin:12px 0}.newsletter p{font-size:13px;color:var(--muted)}.newsletter-form{display:flex;max-width:450px;margin:22px auto 0}.newsletter-form input{min-width:0;flex:1;border:1px solid var(--line);background:var(--paper);padding:14px}.newsletter-form button{border:0;background:var(--ink);color:white;padding:0 18px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+    .footer{background:var(--ink);color:white;padding:45px 24px 20px}.footer-inner{max-width:1240px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}.footer p{font-size:12px;line-height:1.8;color:#bcbab4;max-width:320px}.footer h4{font-size:10px;text-transform:uppercase;letter-spacing:.15em;margin:0 0 15px}.footer-links{display:grid;gap:12px;font-size:12px;color:#d8d6cf}.copyright{max-width:1240px;margin:35px auto 0;padding-top:18px;border-top:1px solid #393939;color:#a5a39c;font-size:10px;display:flex;justify-content:space-between;gap:15px}
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:40;opacity:0;pointer-events:none;transition:.25s}.overlay.show{opacity:1;pointer-events:auto}.drawer{position:fixed;z-index:50;right:0;top:0;height:100dvh;width:min(480px,100%);background:var(--paper);transform:translateX(102%);transition:transform .28s;display:flex;flex-direction:column}.drawer.show{transform:translateX(0)}.drawer-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.drawer-head h2{font-size:20px;margin:0}.close{background:transparent;border:0;font-size:26px;line-height:1}.drawer-body{padding:20px 24px;overflow:auto;flex:1}.cart-empty{text-align:center;padding:65px 10px;color:var(--muted);font-size:13px}.cart-row{display:grid;grid-template-columns:82px 1fr auto;gap:13px;padding:14px 0;border-bottom:1px solid var(--line)}.cart-row img{width:82px;height:105px;object-fit:cover;background:#e5e1d8}.cart-row h3{font-size:12px;margin:2px 0 8px}.cart-row small{color:var(--muted);font-size:11px}.qty{display:flex;align-items:center;gap:10px;margin-top:12px}.qty button{width:26px;height:26px;background:transparent;border:1px solid var(--line)}.remove{display:block;margin-top:8px;border:0;background:transparent;text-decoration:underline;font-size:10px;color:var(--muted);padding:0}.cart-bottom{padding:20px 24px;border-top:1px solid var(--line)}.subtotal{display:flex;justify-content:space-between;font-size:14px;font-weight:700;margin-bottom:8px}.smallnote{font-size:10px;color:var(--muted);line-height:1.6;margin-bottom:15px}.full{width:100%}
+    .modal{position:fixed;z-index:60;inset:0;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(0,0,0,.5)}.modal.show{display:flex}.modal-panel{width:min(700px,100%);max-height:92dvh;overflow:auto;background:var(--paper);box-shadow:var(--shadow)}.modal-head{padding:22px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}.modal-head h2{font-size:21px;margin:0}.checkout-form{padding:24px;display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:grid;gap:7px}.field.fullrow{grid-column:1/-1}.field label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;font-weight:700}.field input,.field textarea,.field select{width:100%;border:1px solid #d6d2c9;background:#fffdf9;padding:13px;font-size:13px;border-radius:0;color:var(--ink)}.field textarea{resize:vertical;min-height:80px}.checkout-summary{grid-column:1/-1;background:#ebe8e0;padding:16px}.summary-line{display:flex;justify-content:space-between;font-size:12px;margin:8px 0}.summary-line.total{font-size:15px;font-weight:800;border-top:1px solid var(--line);padding-top:12px}.form-message{grid-column:1/-1;font-size:12px;line-height:1.6}.form-message.error{color:var(--danger)}.form-message.success{color:#326b42}.order-confirm{padding:30px;text-align:center}.order-confirm h2{font-size:28px}.order-confirm p{font-size:13px;line-height:1.8;color:var(--muted)}.toast{position:fixed;z-index:90;left:50%;bottom:22px;transform:translate(-50%,20px);opacity:0;background:var(--ink);color:white;padding:13px 18px;font-size:12px;transition:.2s;pointer-events:none;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.mobile-search{display:none}
+    @media(max-width:850px){.nav{padding:14px 18px}.navlinks{gap:14px}.hero{min-height:500px}.hero-copy{padding:38px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 13px}.section{padding:56px 18px}.feature{grid-template-columns:1fr 1fr}.footer-inner{gap:25px}}
+    @media(max-width:620px){.announcement{font-size:9px}.nav{gap:10px;padding:12px 14px}.logo{font-size:18px}.menu-toggle{display:grid}.navlinks{display:none;position:absolute;left:0;right:0;top:100%;padding:20px;background:var(--paper);border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.navlinks.open{display:flex}.navactions{gap:7px}.iconbtn{width:36px;height:36px}.hero{grid-template-columns:1fr}.hero-copy{padding:42px 24px}.hero-art{min-height:350px}.hero h1{font-size:58px}.trustbar div{font-size:8px;padding:14px 5px;letter-spacing:.06em}.section-head{align-items:flex-start;flex-direction:column}.section-head p{line-height:1.6}.product-grid{gap:20px 10px}.add-btn{min-height:46px;padding:12px 8px}.product-info h3{font-size:12px}.price{font-size:12px}.product-info{padding-top:11px}.product-badge{font-size:8px;top:8px;left:8px}.wish{top:7px;right:7px;width:30px;height:30px}.feature{grid-template-columns:1fr}.feature-art{min-height:300px}.feature-copy{padding:36px 24px}.newsletter-form{max-width:100%}.footer-inner{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.copyright{flex-direction:column;line-height:1.7}.checkout-form{grid-template-columns:1fr;padding:18px}.field.fullrow,.checkout-summary,.form-message{grid-column:1}.modal{padding:8px}.modal-panel{max-height:96dvh}.modal-head{padding:18px}.drawer-head,.drawer-body,.cart-bottom{padding-left:18px;padding-right:18px}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="announcement">Premium men's streetwear · Cash on delivery available across Pakistan</div>
+  <header>
+    <nav class="nav" aria-label="Main navigation">
+      <button class="iconbtn menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+      <a class="logo" href="#home" aria-label="Gull Royal home">GULL <span>ROYAL</span></a>
+      <div class="navlinks" id="navLinks">
+        <a href="#home">Home</a><a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">Our Story</a><a href="#contact">Contact</a>
+      </div>
+      <div class="navactions">
+        <button class="iconbtn" id="searchBtn" aria-label="Search products">⌕</button>
+        <button class="iconbtn" id="cartBtn" aria-label="Open shopping cart">♧<span class="count" id="cartCount">0</span></button>
+      </div>
+    </nav>
+    <div class="mobile-search" id="searchPanel" style="padding:0 16px 14px"><input id="searchInput" aria-label="Search products" placeholder="Search products..." style="width:100%;padding:12px;border:1px solid var(--line);background:white"></div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy"><span class="eyebrow">New season · 2026</span><h1>OWN<br>YOUR<br>STYLE.</h1><p>Everyday essentials. Elevated streetwear. Made for the way you move.</p><a class="btn" href="#shop">Shop the collection <span>↗</span></a></div>
+      <div class="hero-art"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1200&q=85" alt="Minimal men's streetwear collection" fetchpriority="high"><div class="hero-tag">GULL ROYAL / EST. 2026</div></div>
+    </section>
+    <div class="trustbar"><div>Designed for everyday</div><div>Cash on delivery</div><div>Style without compromise</div></div>
+    <section class="section" id="shop">
+      <div class="section-head"><div><span class="eyebrow">The essentials</span><h2>Shop the collection</h2></div><p>Find your fit. Build your uniform.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-category="All">All pieces</button><button class="filter" data-category="T-Shirts">T-Shirts</button><button class="filter" data-category="Hoodies">Hoodies</button><button class="filter" data-category="Shirts">Shirts</button><button class="filter" data-category="Accessories">Accessories</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+    </section>
+    <section class="feature" id="collections">
+      <div class="feature-art"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1000&q=85" alt="Streetwear outfit editorial" loading="lazy"></div>
+      <div class="feature-copy"><span class="eyebrow">The GULL ROYAL point of view</span><h2>Less noise.<br>More presence.</h2><p>Clean silhouettes, considered details, and versatile pieces that work on your terms. Your wardrobe, your rules.</p><a href="#shop" class="btn">Explore all pieces ↗</a></div>
+    </section>
+    <section class="section" id="about"><div class="section-head"><div><span class="eyebrow">Our philosophy</span><h2>Wear it your way.</h2></div></div><p style="max-width:690px;font-size:15px;line-height:1.9;color:#66645d">GULL ROYAL is built around a simple idea: style should feel like you. We focus on modern men's essentials, versatile fits, and a confident look that doesn't need to shout. Start with the basics. Make them your own.</p></section>
+    <section class="newsletter" id="contact"><span class="eyebrow">Stay in the loop</span><h2>Good things are on the way.</h2><p>Join our list for new drops and collection updates.</p><form class="newsletter-form" id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" required><button type="submit">Sign me up</button></form><p id="newsletterMessage" style="margin:12px 0 0;font-size:11px"></p></section>
+  </main>
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><a class="logo" href="#home">GULL <span>ROYAL</span></a><p>Premium men's streetwear. Built around the essentials. Own Your Style.</p></div>
+      <div><h4>Explore</h4><div class="footer-links"><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="#about">Our story</a></div></div>
+      <div><h4>Customer care</h4><div class="footer-links"><a href="#contact">Contact</a><a href="#shipping">Shipping & returns</a><a href="#privacy">Privacy policy</a></div></div>
+    </div>
+    <div class="copyright"><span>© <span id="year"></span> GULL ROYAL. All rights reserved.</span><span>Made for your everyday.</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true">
+    <div class="drawer-head"><h2>Your bag (<span id="drawerCount">0</span>)</h2><button class="close" id="closeCart" aria-label="Close cart">×</button></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="cart-bottom"><div class="subtotal"><span>Subtotal</span><span id="cartSubtotal">Rs. 0</span></div><div class="smallnote">Shipping charges, if any, will be confirmed with your order. Payment method: Cash on Delivery.</div><button class="btn full" id="checkoutBtn">Continue to checkout →</button></div>
+  </aside>
+
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-panel">
+      <div class="modal-head"><h2 id="checkoutTitle">Checkout</h2><button class="close" id="closeCheckout" aria-label="Close checkout">×</button></div>
+      <form class="checkout-form" id="checkoutForm">
+        <div class="field"><label for="customerName">Full name *</label><input id="customerName" name="customerName" autocomplete="name" required minlength="2" placeholder="Your full name"></div>
+        <div class="field"><label for="customerPhone">Phone number *</label><input id="customerPhone" name="customerPhone" autocomplete="tel" type="tel" required placeholder="03XXXXXXXXX" pattern="[\+]?[0-9\s\-]{10,16}"></div>
+        <div class="field fullrow"><label for="customerEmail">Email (optional)</label><input id="customerEmail" name="customerEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
+        <div class="field fullrow"><label for="customerAddress">Delivery address *</label><textarea id="customerAddress" name="customerAddress" autocomplete="street-address" required minlength="8" placeholder="House, street, area, city"></textarea></div>
+        <div class="field"><label for="customerCity">City *</label><input id="customerCity" name="customerCity" required placeholder="Your city"></div>
+        <div class="field"><label for="customerSizeNote">Size / order note</label><input id="customerSizeNote" name="customerSizeNote" placeholder="Optional note"></div>
+        <div class="checkout-summary" id="checkoutSummary"></div>
+        <div class="field fullrow"><label style="display:flex;align-items:flex-start;gap:10px;text-transform:none;letter-spacing:0;font-weight:400"><input type="checkbox" id="confirmCod" required style="width:auto;margin-top:2px"> I confirm my details and understand this order uses Cash on Delivery.</label></div>
+        <div class="form-message" id="checkoutMessage" role="status"></div>
+        <div class="field fullrow"><button class="btn full" type="submit" id="placeOrderBtn">Place COD order →</button><p class="smallnote" style="margin:0">Your order is not confirmed until the store receives it. Do not refresh or close the page while submitting.</p></div>
+      </form>
+    </div>
+  </div>
+  <div class="modal" id="confirmationModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle">
+    <div class="modal-panel order-confirm"><div style="font-size:38px;margin-bottom:10px">✓</div><h2 id="confirmTitle">Order submitted</h2><p id="confirmationText"></p><button class="btn" id="continueShopping">Continue shopping</button></div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <!-- EmailJS: create an account at emailjs.com, connect your email service and create a template.
+       Then replace the three configuration values below. Do not put private email-service/API secrets here. -->
+  <script>
+    /***************************************************************
+     * GULL ROYAL storefront
+     * Product details below are SAMPLE DEMO products and prices.
+     * Replace demo items with your actual stock, sizes, and prices.
+     ***************************************************************/
+    const STORE_EMAIL = "junidddkhaaan@gmail.com";
+    const EMAILJS_PUBLIC_KEY = "YOUR_EMAILJS_PUBLIC_KEY";
+    const EMAILJS_SERVICE_ID = "YOUR_EMAILJS_SERVICE_ID";
+    const EMAILJS_TEMPLATE_ID = "YOUR_EMAILJS_TEMPLATE_ID";
+
+    const products = [
+      {id:"gr-tee-01",name:"Essential Heavyweight Tee",category:"T-Shirts",price:1890,tag:"Bestseller",description:"Relaxed fit · Cotton feel",image:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]},
+      {id:"gr-hood-01",name:"Core Pullover Hoodie",category:"Hoodies",price:3490,tag:"New arrival",description:"Everyday layer · Relaxed fit",image:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]},
+      {id:"gr-shirt-01",name:"Everyday Oxford Shirt",category:"Shirts",price:2790,tag:"Essential",description:"Clean lines · Easy styling",image:"https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]},
+      {id:"gr-tee-02",name:"Relaxed Fit Graphic Tee",category:"T-Shirts",price:2190,tag:"Limited",description:"Statement graphic · Soft feel",image:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]},
+      {id:"gr-hood-02",name:"Minimal Zip Hoodie",category:"Hoodies",price:3890,tag:"New arrival",description:"Layer-ready · Modern profile",image:"https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]},
+      {id:"gr-shirt-02",name:"Textured Casual Shirt",category:"Shirts",price:2990,tag:"Versatile",description:"Smart casual · All-day wear",image:"https://images.unsplash.com/photo-1603252109303-2751441dd157?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]},
+      {id:"gr-cap-01",name:"Royal Everyday Cap",category:"Accessories",price:990,tag:"Finishing touch",description:"Minimal detail · Adjustable",image:"https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=700&q=85",sizes:["One Size"]},
+      {id:"gr-tee-03",name:"Premium Boxy Tee",category:"T-Shirts",price:1990,tag:"Everyday",description:"Boxy silhouette · Easy fit",image:"https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=700&q=85",sizes:["S","M","L","XL"]}
+    ];
+
+    const $ = (selector) => document.querySelector(selector);
+    const money = (amount) => "Rs. " + Number(amount).toLocaleString("en-PK");
+    let selectedCategory = "All";
+    let cart = loadCart();
+    let wishlist = new Set();
+    let toastTimer;
+
+    function loadCart(){
+      try { const saved = JSON.parse(localStorage.getItem("gr_cart") || "[]"); return Array.isArray(saved) ? saved.filter(x => products.some(p => p.id === x.id) && Number.isInteger(x.qty) && x.qty > 0 && products.find(p=>p.id===x.id).sizes.includes(x.size)) : []; }
+      catch { return []; }
+    }
+    function saveCart(){ try{localStorage.setItem("gr_cart",JSON.stringify(cart));}catch{} }
+    function cartQty(){return cart.reduce((sum,item)=>sum+item.qty,0)}
+    function cartTotal(){return cart.reduce((sum,item)=>sum+products.find(p=>p.id===item.id).price*item.qty,0)}
+    function safeText(value){return String(value).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]))}
+    function showToast(message){const toast=$("#toast");toast.textContent=message;toast.classList.add("show");clearTimeout(toastTimer);toastTimer=setTimeout(()=>toast.classList.remove("show"),2600)}
+
+    function renderProducts(){
+      const query = ($("#searchInput")?.value || "").trim().toLowerCase();
+      const shown = products.filter(p => (selectedCategory==="All" || p.category===selectedCategory) && (!query || `${p.name} ${p.category} ${p.description}`.toLowerCase().includes(query)));
+      $("#productGrid").innerHTML = shown.length ? shown.map(p=>`
+        <article class="product-card">
+          <div class="product-image"><img src="${p.image}" alt="${safeText(p.name)}" loading="lazy" onerror="this.onerror=null;this.src='https://placehold.co/600x800/f5f3ee/111111?text=GULL+ROYAL'"><span class="product-badge">${safeText(p.tag)}</span>
+            <button class="wish" data-wish="${p.id}" aria-label="Add ${safeText(p.name)} to wishlist">${wishlist.has(p.id)?"♥":"♡"}</button>
+          </div>
+          <div class="product-info"><div class="product-top"><h3>${safeText(p.name)}</h3><span class="price">${money(p.price)}</span></div><p>${safeText(p.description)}</p>
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px"><label for="size-${p.id}" style="font-size:10px;text-transform:uppercase;letter-spacing:.08em">Size</label><select id="size-${p.id}" aria-label="Choose size for ${safeText(p.name)}" style="flex:1;padding:8px;border:1px solid var(--line);background:transparent;font-size:11px">${p.sizes.map(s=>`<option value="${s}">${s}</option>`).join("")}</select></div>
+          <button class="add-btn" data-add="${p.id}">Add to bag +</button></div>
+        </article>`).join("") : `<p style="grid-column:1/-1;padding:35px 0;color:var(--muted)">No products found. Try another search or category.</p>`;
+    }
+    function renderCart(){
+      $("#cartCount").textContent=cartQty();$("#drawerCount").textContent=cartQty();$("#cartSubtotal").textContent=money(cartTotal());
+      if(!cart.length){$("#cartItems").innerHTML='<div class="cart-empty"><div style="font-size:35px;margin-bottom:12px">♧</div>Your bag is waiting.<br><br><button class="btn" id="emptyShopBtn">Explore collection</button></div>';$("#checkoutBtn").disabled=true;$("#checkoutBtn").style.opacity=".45";}
+      else{
+        $("#checkoutBtn").disabled=false;$("#checkoutBtn").style.opacity="1";
+        $("#cartItems").innerHTML=cart.map(item=>{const p=products.find(x=>x.id===item.id);return `<div class="cart-row"><img src="${p.image}" alt="${safeText(p.name)}" onerror="this.onerror=null;this.src='https://placehold.co/300x400/f5f3ee/111111?text=GR'"><div><h3>${safeText(p.name)}</h3><small>Size: ${safeText(item.size)}</small><div class="qty"><button data-qty="-1" data-id="${p.id}" data-size="${item.size}" aria-label="Decrease quantity">−</button><span>${item.qty}</span><button data-qty="1" data-id="${p.id}" data-size="${item.size}" aria-label="Increase quantity">+</button></div><button class="remove" data-remove="${p.id}" data-size="${item.size}">Remove</button></div><strong style="font-size:12px">${money(p.price*item.qty)}</strong></div>`}).join("");
+      }
+      renderCheckoutSummary();
+    }
+    function renderCheckoutSummary(){
+      const target=$("#checkoutSummary");if(!target)return;
+      target.innerHTML=`<strong style="font-size:11px;text-transform:uppercase;letter-spacing:.1em">Order summary</strong>${cart.map(item=>{const p=products.find(x=>x.id===item.id);return `<div class="summary-line"><span>${safeText(p.name)} · ${safeText(item.size)} × ${item.qty}</span><span>${money(p.price*item.qty)}</span></div>`}).join("")}<div class="summary-line total"><span>Total (COD)</span><span>${money(cartTotal())}</span></div>`;
+    }
+    function openCart(){ $("#overlay").classList.add("show");$("#cartDrawer").classList.add("show");$("#cartDrawer").setAttribute("aria-hidden","false");document.body.style.overflow="hidden"; }
+    function closeCart(){ $("#overlay").classList.remove("show");$("#cartDrawer").classList.remove("show");$("#cartDrawer").setAttribute("aria-hidden","true");if(!$("#checkoutModal").classList.contains("show"))document.body.style.overflow=""; }
+    function openCheckout(){
+      if(!cart.length){showToast("Your bag is empty.");return;}
+      closeCart();$("#checkoutMessage").textContent="";$("#checkoutMessage").className="form-message";$("#checkoutModal").classList.add("show");document.body.style.overflow="hidden";renderCheckoutSummary();setTimeout(()=>$("#customerName").focus(),80);
+    }
+    function closeCheckout(){ $("#checkoutModal").classList.remove("show");document.body.style.overflow=""; }
+    function addToCart(id,size){
+      const product=products.find(p=>p.id===id);if(!product||!product.sizes.includes(size))return;
+      const existing=cart.find(item=>item.id===id&&item.size===size);
+      if(existing)existing.qty=Math.min(existing.qty+1,20);else cart.push({id,size,qty:1});
+      saveCart();renderCart();showToast(`${product.name} added to your bag.`);
+    }
+
+    $("#productGrid").addEventListener("click",e=>{
+      const add=e.target.closest("[data-add]");if(add){const id=add.dataset.add;addToCart(id,$(`#size-${id}`).value);return;}
+      const wish=e.target.closest("[data-wish]");if(wish){const id=wish.dataset.wish;if(wishlist.has(id))wishlist.delete(id);else wishlist.add(id);renderProducts();showToast(wishlist.has(id)?"Added to wishlist.":"Removed from wishlist.");}
+    });
+    $("#filters").addEventListener("click",e=>{const btn=e.target.closest("[data-category]");if(!btn)return;selectedCategory=btn.dataset.category;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b===btn));renderProducts();});
+    $("#cartItems").addEventListener("click",e=>{
+      if(e.target.closest("#emptyShopBtn")){closeCart();$("#shop").scrollIntoView({behavior:"smooth"});return;}
+      const qty=e.target.closest("[data-qty]");if(qty){const item=cart.find(x=>x.id===qty.dataset.id&&x.size===qty.dataset.size);if(item){item.qty+=Number(qty.dataset.qty);if(item.qty<=0)cart=cart.filter(x=>x!==item);if(item.qty>20)item.qty=20;saveCart();renderCart();}return;}
+      const remove=e.target.closest("[data-remove]");if(remove){cart=cart.filter(x=>!(x.id===remove.dataset.remove&&x.size===remove.dataset.size));saveCart();renderCart();}
+    });
+    $("#cartBtn").addEventListener("click",openCart);$("#closeCart").addEventListener("click",closeCart);$("#overlay").addEventListener("click",closeCart);$("#checkoutBtn").addEventListener("click",openCheckout);$("#closeCheckout").addEventListener("click",closeCheckout);
+    $("#checkoutModal").addEventListener("click",e=>{if(e.target===$("#checkoutModal"))closeCheckout();});
+    $("#searchBtn").addEventListener("click",()=>{const panel=$("#searchPanel");panel.style.display=panel.style.display==="block"?"none":"block";if(panel.style.display==="block")$("#searchInput").focus();});
+    $("#searchInput").addEventListener("input",renderProducts);
+    $("#menuToggle").addEventListener("click",()=>$("#navLinks").classList.toggle("open"));
+    $("#navLinks").addEventListener("click",e=>{if(e.target.closest("a"))$("#navLinks").classList.remove("open");});
+    $("#continueShopping").addEventListener("click",()=>{$("#confirmationModal").classList.remove("show");document.body.style.overflow="";$("#shop").scrollIntoView({behavior:"smooth"});});
+    $("#newsletterForm").addEventListener("submit",e=>{e.preventDefault();$("#newsletterMessage").textContent="Thanks for your interest! Newsletter signup is a demo until an email marketing service is connected.";$("#newsletterEmail").value="";});
+
+    function getOrderText(order){
+      const items=order.items.map(item=>`${item.name} | Size: ${item.size} | Qty: ${item.qty} | ${money(item.price*item.qty)}`).join("\n");
+      return `NEW GULL ROYAL COD ORDER\nOrder reference: ${order.orderId}\n\nCUSTOMER\nName: ${order.customer.name}\nPhone: ${order.customer.phone}\nEmail: ${order.customer.email||"Not provided"}\nAddress: ${order.customer.address}\nCity: ${order.customer.city}\nNotes: ${order.customer.note||"None"}\n\nITEMS\n${items}\n\nTOTAL: ${money(order.total)}\nPayment: Cash on Delivery\nStatus: Pending store confirmation`;
+    }
+    function sendOrderEmail(order){
+      return new Promise((resolve,reject)=>{
+        const configured=EMAILJS_PUBLIC_KEY!=="YOUR_EMAILJS_PUBLIC_KEY"&&EMAILJS_SERVICE_ID!=="YOUR_EMAILJS_SERVICE_ID"&&EMAILJS_TEMPLATE_ID!=="YOUR_EMAILJS_TEMPLATE_ID";
+        if(!configured){reject(new Error("Email service is not configured yet. Add your EmailJS public key, service ID and template ID in index.html before accepting real orders."));return;}
+        if(!window.emailjs){reject(new Error("Email service library did not load. Please check your connection and try again."));return;}
+        const itemsText=order.items.map(item=>`${item.name} | Size: ${item.size} | Qty: ${item.qty} | ${money(item.price*item.qty)}`).join("\n");
+        const templateParams={
+          to_email:STORE_EMAIL,order_id:order.orderId,customer_name:order.customer.name,customer_phone:order.customer.phone,
+          customer_email:order.customer.email||"Not provided",delivery_address:order.customer.address,customer_city:order.customer.city,
+          order_notes:order.customer.note||"None",order_items:itemsText,order_total:money(order.total),payment_method:"Cash on Delivery",
+          order_details:getOrderText(order),reply_to:order.customer.email||""
+        };
+        window.emailjs.send(EMAILJS_SERVICE_ID,EMAILJS_TEMPLATE_ID,templateParams).then(resolve).catch(reject);
+      });
+    }
+    $("#checkoutForm").addEventListener("submit",async e=>{
+      e.preventDefault();
+      if(!cart.length){$("#checkoutMessage").textContent="Your bag is empty.";$("#checkoutMessage").className="form-message error";return;}
+      const form=e.currentTarget;if(!form.reportValidity())return;
+      const btn=$("#placeOrderBtn");const msg=$("#checkoutMessage");btn.disabled=true;btn.textContent="Submitting order…";msg.className="form-message";msg.textContent="Sending your order details securely to the store. Please wait.";
+      const order={
+        orderId:"GR-"+Date.now().toString(36).toUpperCase(),
+        customer:{name:$("#customerName").value.trim(),phone:$("#customerPhone").value.trim(),email:$("#customerEmail").value.trim(),address:$("#customerAddress").value.trim(),city:$("#customerCity").value.trim(),note:$("#customerSizeNote").value.trim()},
+        items:cart.map(item=>{const p=products.find(x=>x.id===item.id);return {id:p.id,name:p.name,price:p.price,size:item.size,qty:item.qty};}),
+        total:cartTotal()
+      };
+      try{
+        await sendOrderEmail(order);
+        cart=[];saveCart();renderCart();closeCheckout();$("#confirmationText").textContent=`Your order reference is ${order.orderId}. Your order details have been sent to the store. Payment is Cash on Delivery. The store may contact you to confirm delivery details.`;$("#confirmationModal").classList.add("show");document.body.style.overflow="hidden";form.reset();
+      }catch(err){
+        console.error("Order email failed:",err);
+        msg.className="form-message error";
+        msg.textContent=(err&&err.message&&err.message.includes("not configured"))?`Email is not connected yet. Your order has NOT been submitted. Configure EmailJS to receive orders at ${STORE_EMAIL}. Your cart is still saved.`:`We couldn't send this order, so it has NOT been confirmed. Please try again in a moment. If this continues, contact the store directly.`;
+      }finally{btn.disabled=false;btn.textContent="Place COD order →";}
+    });
+
+    // Load EmailJS only when a valid public key is configured.
+    if(EMAILJS_PUBLIC_KEY!=="YOUR_EMAILJS_PUBLIC_KEY"){
+      const script=document.createElement("script");script.src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js";script.onload=()=>window.emailjs&&window.emailjs.init({publicKey:EMAILJS_PUBLIC_KEY});script.onerror=()=>console.warn("EmailJS library could not load.");document.head.appendChild(script);
+    }
+    $("#year").textContent=new Date().getFullYear();
+    renderProducts();renderCart();
+  </script>
+</body>
+</html>
